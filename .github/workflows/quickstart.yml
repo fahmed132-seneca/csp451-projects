@@ -2,9 +2,7 @@ name: Quickstart Workflow
 
 on:
   push:
-    branches: 
-      - main
-      - feat-body-text
+    branches: [main, feat-body-text]
 
 jobs:
   print-message:
@@ -17,7 +15,7 @@ jobs:
         run: echo "Quickstart GitHub Actions"
 
       - name: Print Working Directory
-        run: echo "Working Directory: $(pwd)"
+        run: echo $(pwd)"
 
       - name: Print Repository URL
-        run: echo "Repository URL: ${{ github.repository }}"
+        run: echo ${{ github.repository }}"
