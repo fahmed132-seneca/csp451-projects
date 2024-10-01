@@ -14,7 +14,7 @@ jobs:
       run: echo "Quickstart GitHub Actions"
 
     - name: Print Working Directory
-      run: echo $(pwd)"
+      run:  echo "Working Directory:" $(pwd)
 
     - name: Print Repository URL
-      run: echo ${{ github.repository }}"
+      run: echo "Repository URL:" ${{ github.repository }}
